@@ -1,5 +1,3 @@
-import Header from '../../components/Header.jsx/Header';
-
 const Contacts = () => {
   return (
     <>

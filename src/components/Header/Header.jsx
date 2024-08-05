@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import s from './Header.module.scss';
 import logo from '../../assets/images/logo.svg';
-import facebook from '../../assets/images/icons/facebook_icon.svg';
-import twitter from '../../assets/images/icons/twitter_icon.svg';
-import instagram from '../../assets/images/icons/instagram_icon.svg';
+import Socials from '../Socials/Socials';
 
 const Header = () => {
   return (
@@ -29,11 +27,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className={s.icons}>
-          <img src={facebook} alt="Facebook icon" />
-          <img src={twitter} alt="Twitter icon" />
-          <img src={instagram} alt="Instagram icon" />
-        </div>
+        <Socials />
       </div>
     </header>
   );
