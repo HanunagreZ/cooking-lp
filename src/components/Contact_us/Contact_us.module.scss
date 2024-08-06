@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  gap: 20px;
+
+  & h1 {
+    font-size: 56px;
+    font-weight: 600;
+  }
+
+  & .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    & .img_content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      background: linear-gradient(
+        0deg,
+        rgba(201, 241, 250, 1) 0%,
+        rgba(255, 255, 255, 1) 60%
+      );
+      border-radius: 30px;
+      overflow: hidden;
+    }
+  }
+
+  & .text_content {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 10px;
+
+    & .input {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 12px;
+      width: 47%;
+
+      & input {
+        padding: 16px;
+        border-radius: 16px;
+        border: 1px solid grey;
+        width: 100%;
+      }
+
+      & label {
+        font-size: 12px;
+      }
+    }
+
+    & .select {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 12px;
+      width: 47%;
+
+      & label {
+        font-size: 12px;
+      }
+
+      & select {
+        padding: 16px;
+        border-radius: 16px;
+        border: 1px solid grey;
+        width: 100%;
+      }
+    }
+
+    & .textarea {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 12px;
+      width: 100%;
+
+      & label {
+        font-size: 12px;
+      }
+
+      & textarea {
+        padding: 16px;
+        border-radius: 16px;
+        border: 1px solid grey;
+        width: 100%;
+      }
+    }
+
+    & a {
+      padding: 20px 60px;
+      background-color: black;
+      color: white;
+      border-radius: 16px;
+    }
+  }
+}
