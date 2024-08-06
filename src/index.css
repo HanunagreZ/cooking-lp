@@ -9,7 +9,6 @@
 .app {
   width: 100%;
   max-width: 1440px;
-  height: 100vh;
   margin: 0 auto;
   font-family: 'Inter', sans-serif;
 }

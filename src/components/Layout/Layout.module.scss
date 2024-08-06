@@ -1,6 +1,6 @@
 .layout {
   & main {
-    height: calc(100vh - 168px);
-    padding-top: 40px;
+    min-height: calc(100vh - 168px);
+    padding: 40px 20px;
   }
 }

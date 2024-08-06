@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 30px 0;
+
+  & .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    & h2 {
+      font-size: 40px;
+    }
+
+    & p {
+      font-size: 16px;
+    }
+  }
+
+  & .recipes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    & .recipe {
+      width: 400px;
+      height: 440px;
+      background: linear-gradient(
+        0deg,
+        rgba(201, 241, 250, 1) 0%,
+        rgba(255, 255, 255, 1) 60%
+      );
+      padding: 16px 20px;
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+        border-radius: 30px;
+      }
+
+      & h3 {
+        font-size: 24px;
+      }
+
+      & .recipe_badge {
+        display: flex;
+        align-self: start;
+        gap: 24px;
+
+        & .minutes,
+        .chicken {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+      }
+    }
+  }
+}
