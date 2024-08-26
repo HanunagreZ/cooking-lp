@@ -5,4 +5,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   base: '/cooking-lp/',
+  build: {
+    outDir: 'dist',
+    publicPath: '/cooking-lp/',
+  },
 });
