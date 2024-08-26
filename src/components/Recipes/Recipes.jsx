@@ -84,7 +84,7 @@ const Recipes = () => {
         <div className={s.recipes}>
           {recipe_positions.map((item) => (
             <div className={s.recipe} key={item.id}>
-              <img src={item.img} alt={item.title} />
+              <img src={item.img} alt={item.title} className={s.recipeImg} />
               <h3>{item.title}</h3>
               <div className={s.recipe_badge}>
                 <div className={s.minutes}>

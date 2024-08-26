@@ -1,5 +1,5 @@
 .header {
-  background-color: darkkhaki;
+  background-color: white;
   padding: 30px 40px;
   border-bottom: 1px solid black;
 
@@ -7,6 +7,36 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    & .nav_container {
+      @media screen and (max-width: 767px) {
+        position: absolute;
+        top: 86px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 40px;
+        transition: 0.3s;
+
+        & ul {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+        }
+      }
+    }
+
+    & .mobileNavOpen {
+      transform: translate(-100%, 0);
+      transition: 0.3s;
+    }
+
+    & .socials {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
   }
 
   & .nav ul {
@@ -14,5 +44,26 @@
     align-items: center;
     gap: 40px;
     font-size: 16px;
+
+    & a {
+      color: inherit;
+      transition: 0.5s;
+
+      &:hover {
+        text-decoration: underline;
+        transition: 0.5s;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.burger_icon {
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
   }
 }

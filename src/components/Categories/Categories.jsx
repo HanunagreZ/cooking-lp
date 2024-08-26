@@ -61,6 +61,7 @@ const Categories = () => {
               style={{
                 background: `linear-gradient(0deg, ${item.gradient_color}, rgba(255,255,255,1) 60%)`,
               }}
+              key={item.id}
             >
               <img src={item.img} alt={item.title} />
               <p>{item.title}</p>

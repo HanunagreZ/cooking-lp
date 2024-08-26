@@ -9,7 +9,7 @@
   gap: 20px;
 
   & h1 {
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 600;
   }
 
@@ -24,7 +24,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 30%;
+      width: 500px;
       background: linear-gradient(
         0deg,
         rgba(201, 241, 250, 1) 0%,
@@ -32,6 +32,22 @@
       );
       border-radius: 30px;
       overflow: hidden;
+
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 575px) {
+        max-width: 300px;
+
+        & img {
+          max-width: 300px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
     }
   }
 
@@ -48,7 +64,7 @@
       justify-content: center;
       align-items: flex-start;
       gap: 12px;
-      width: 47%;
+      width: 45%;
 
       & input {
         padding: 16px;
@@ -99,6 +115,7 @@
         border-radius: 16px;
         border: 1px solid grey;
         width: 100%;
+        font-family: 'Inter', sans-serif;
       }
     }
 
@@ -107,6 +124,16 @@
       background-color: black;
       color: white;
       border-radius: 16px;
+    }
+
+    @media screen and (max-width: 575px) {
+      & .input {
+        width: 100%;
+      }
+
+      & .select {
+        width: 100%;
+      }
     }
   }
 }

@@ -5,11 +5,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: darkgoldenrod;
   border-radius: 60px;
   background-color: #e7f9fd;
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: 1000px) {
+    padding: 10px;
+  }
 
   & .content {
     width: 100%;
@@ -43,6 +46,7 @@
         padding: 15px;
         border-radius: 30px;
         border: none;
+        outline: none;
       }
 
       & a {
@@ -51,6 +55,13 @@
         color: white;
         border-radius: 16px;
       }
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        position: relative;
+        z-index: 1;
+        gap: 20px;
+      }
     }
   }
 
@@ -58,17 +69,46 @@
     position: absolute;
     bottom: 0;
     right: 0;
+
+    @media screen and (max-width: 1000px) {
+      bottom: -55px;
+      right: -55px;
+    }
+
+    @media screen and (max-width: 767px) {
+      bottom: -125px;
+      right: -125px;
+    }
   }
 
   & .salad_fresh {
     position: absolute;
     bottom: 0;
     left: -40px;
+
+    @media screen and (max-width: 1000px) {
+      bottom: -80px;
+      left: -140px;
+    }
+
+    @media screen and (max-width: 767px) {
+      bottom: -130px;
+      left: -190px;
+    }
   }
 
   & .rucola {
     position: absolute;
     top: 200px;
     right: 230px;
+
+    @media screen and (max-width: 1000px) {
+      top: 130px;
+      right: 10px;
+    }
+
+    @media screen and (max-width: 767px) {
+      top: 10px;
+    }
   }
 }

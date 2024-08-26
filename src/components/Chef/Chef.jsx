@@ -18,7 +18,7 @@ const Chef = () => {
           <a href="#">Learn More</a>
         </div>
         <div className={s.img_content}>
-          <img src={chef} alt="Chef" />
+          <img src={chef} alt="Chef" className={s.chefImg} />
           <img src={tomato} alt="Tomato" className={s.tomato} />
           <img src={bacon} alt="Bacon" className={s.bacon} />
           <img src={onion} alt="Onion" className={s.onion} />
