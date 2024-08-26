@@ -1,4 +1,3 @@
-import Socials from '../Socials/Socials';
 import s from './Footer.module.scss';
 
 const Footer = () => {

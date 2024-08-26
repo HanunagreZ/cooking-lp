@@ -1,4 +1,3 @@
-import React from 'react';
 import s from './HotRecipe.module.scss';
 import chicken from '../../assets/images/hot recipe/chicken.svg';
 import recipe_icon from '../../assets/images/icons/recipe_icon.svg';
